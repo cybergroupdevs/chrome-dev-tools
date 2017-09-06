@@ -1,0 +1,43 @@
+<div class="container top-buffer">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="page-header">
+                <h3>Elements</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div ng-style="{ 'background-color': background}" style="height:200px; width: 100%; border: 1px solid black">
+                </div>
+                <button style="outline: 0" ng-click="getRandomColor()" type="button" class="btn btn-warning btn-block">Generate</button>
+                <small>Break On : Attribute Modifications</small>
+            </div>
+            <div class="col-md-6">
+                <div ng-if="showElement" style="background:#540d6e; height:200px; width: 100%; border: 1px solid black">
+                </div>
+                <button style="outline: 0" ng-click="removeElement()" type="button" class="btn btn-warning btn-block">{{button}}</button>
+                <small>Break On : Node Removal</small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div style="background:#540d6e; height:200px; width: 100%; border: 1px solid black">
+                	<div ng-if="childElement" align="center"><h1 style="color:white;">THIS IS A CHILD ELEMENT</h1></div>
+                </div>
+                <button style="outline: 0" ng-click="addChildElement()" type="button" class="btn btn-warning btn-block">Add Child Element</button>
+                <small>Break On : Subtree Modification</small>
+            </div>
+        </div>
+         <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="page-header">
+                <h3>Sources</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">               
+                <button style="outline: 0" ng-click="runAPI()" type="button" class="btn btn-warning btn-block">Call APIs</button>
+                <small>Run All APIs</small>
+            </div>
+        </div>
+    </div>
+</div>

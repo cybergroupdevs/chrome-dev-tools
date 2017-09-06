@@ -1,0 +1,75 @@
+<div class="container top-buffer-60 ">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <div class="col-md-12 card">
+                <div style="text-align: center;">
+                    <img height="130" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaL2h2iZmiNx5SdfORJqceT-xK0px7Hu0vwbstEsPWj67yBrLrjA">
+                </div>
+                <form class="bs-component" ng-submit="create(clientName,brief,domain,email,password)">
+                    <div class="form-group label-floating is-empty">
+                        <label class="control-label" for="focusedInput1">Client Name*</label>
+                        <input ng-model="clientName" class="form-control" id="focusedInput1" type="text">
+                        <span class="help-block">It must be unique</span>
+                    </div>
+                    <!-- <div class="form-group label-floating is-empty">
+                        <label for="textArea" class="control-label">Client Brief</label>
+                        <div class="">
+                            <textarea ng-model="brief" class="form-control" rows="2" id="textArea"></textarea>
+                            <span class="help-block">Any small description or special mention about the client should go here</span>
+                        </div>
+                    </div> -->
+                    <div class="form-group label-floating is-empty">
+                        <label for="textArea" class="control-label">Admin Name</label>
+                        <div class="">
+                            <input ng-model="name" class="form-control" id="focusedInput1" type="text">
+                            <span class="help-block">Name of primary contact</span>
+                        </div>
+                    </div>
+                    <div class="form-group label-floating is-empty">
+                        <label class="control-label" for="focusedInput1">Domain</label>
+                        <input ng-model="domain" class="form-control" id="focusedInput1" type="text">
+                        <span class="help-block">The area of work for client eg: Banking/Airlines/Pharmaceuticals etc</span>
+                    </div>
+                    <div class="col-xs-6" style="padding: 0px">
+                        <div class="form-group label-floating is-empty">
+                            <label class="control-label" for="focusedInput1">Primary Email*</label>
+                            <input ng-model="email" class="form-control" id="focusedInput1" type="email">
+                            <span class="help-block">This user will be admin by default</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-6" style="padding: 0px">
+                        <div class="form-group label-floating is-empty">
+                            <label class="control-label" for="focusedInput1">Password*</label>
+                            <input ng-model="password" class="form-control" id="focusedInput1" type="password">
+                            <span class="help-block">The user can later change this password</span>
+                        </div>
+                    </div>
+                    <!--   <div class="form-group">
+                        <div class="col-xs-6" style="padding: 0px">
+                            <select id="select111" class="form-control">
+                                <option>NLP Only</option>
+                                <option>BOT Only</option>
+                                <option>NLP + BOT</option>
+                                <option>NLP + BOT + Dashboard</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-6" style="padding: 0px">
+                            <select id="select111" class="form-control">
+                                <option>NLP Only</option>
+                                <option>BOT Only</option>
+                                <option>NLP + BOT</option>
+                                <option>NLP + BOT + Dashboard</option>
+                            </select>
+                            <span class="help-block">The area of work for client eg: Banking/Airlines/Pharmaceuticals etc</span>
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <div class="col-xs-12" style="padding: 0px">
+                            <button type="submit" class="btn btn-info btn-raised btn-block">Create Account</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

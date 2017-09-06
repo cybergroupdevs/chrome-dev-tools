@@ -1,0 +1,97 @@
+<div class="container top-buffer-60">
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Client Info</div>
+            <div class="panel-body">
+                <form class="bs-component">
+                    <div class="form-group is-empty">
+                        <label for="clientName" class="control-label">Client Name</label>
+                        <div>
+                            <input ng-model="clientName" type="text" class="form-control" id="clientName" placeholder="Client Name">
+                        </div>
+                    </div>
+                    <div class="form-group is-empty">
+                        <label for="clientName" class="control-label">Domain</label>
+                        <div>
+                            <input ng-model="domain" type="text" class="form-control" id="clientName" placeholder="Work Domain">
+                        </div>
+                        <span class="help-block">The area of work for client eg: Banking/Airlines/Pharmaceuticals etc</span>
+                    </div>
+                    <div class="form-group is-empty">
+                        <label for="clientName" class="control-label">Brief</label>
+                        <div>
+                            <textarea ng-model="brief" class="form-control" rows="2" id="textArea"></textarea>
+                        </div>
+                        <span class="help-block">Any small description or special mention about the client should go here</span>
+                    </div>
+                    <div class="form-group is-empty">
+                        <label for="clientName" class="control-label">Address</label>
+                        <div>
+                            <input ng-model="address" type="text" class="form-control" id="clientName" placeholder="Address">
+                        </div>
+                        <span class="help-block">Office Address</span>
+                    </div>
+                    <div class="form-group is-empty is-fileinput">
+                        <input type="file" id="inputFile4" multiple="">
+                        <div class="input-group">
+                            <input type="text" readonly="" class="form-control" placeholder="Upload CSV/TSV file for client NLP">
+                            <span class="input-group-btn input-group-sm">
+                  <button type="button" class="btn btn-fab btn-fab-mini">
+                    <i class="material-icons">attach_file</i>
+                  </button>
+                </span>
+                        </div>
+                    </div>
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <div class="checkbox">
+                                <label style="padding: 10px">
+                                    <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> NLP
+                                </label>
+                                <label style="padding: 10px">
+                                    <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Bot
+                                </label>
+                                <label style="padding: 10px">
+                                    <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Dashboard
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-block btn-info btn-raised">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-info">
+            <div class="panel-heading">Users</div>
+            <div class="panel-body">
+                <div class="list-group">
+                    <div ng-repeat="user in users">
+                        <div class="list-group-item">
+                            <div class="row-picture">
+                                <img class="circle" src="http://lorempixel.com/56/56/people/1" alt="icon">
+                            </div>
+                            <div class="row-content">
+                                <h4 class="list-group-item-heading">{{user.name}} <span class="label label-info">Admin</span></h4>
+                                <p class="list-group-item-text">{{user.email}}</p>
+                            </div>
+                        </div>
+                        <div class="list-group-separator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Danger Zone</h3>
+            </div>
+            <div class="panel-body">
+                <button type="button" class="btn  btn-warning">Deactivate Account
+                    <div class="ripple-container"></div>
+                </button>
+                <button type="submit" class="btn btn-danger">Delete Account</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+h1 {
+    color: #000000;
+}
+
+p {
+    color: #000;
+}
+
+.top-buffer-60 {
+    margin-top: 60px;
+}
+
+.top-buffer {
+    margin-top: 30px;
+}
+
+.card {
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.1);
+    background: white;
+    padding: 20px;
+}
+
+.navbar-default {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    -webkit-box-shadow: 0 6px 6px -6px #ccc;
+    -moz-box-shadow: 0 6px 6px -6px #ccc;
+    box-shadow: 0 6px 6px -6px #ccc;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #95989A !important;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #212121 !important;
+}

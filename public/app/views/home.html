@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="page-header">
-                <h3>Elements</h3>
+                <h3 style="font-weight: 300">Elements</h3>
             </div>
         </div>
         <div class="row">
@@ -22,21 +22,77 @@
         <div class="row">
             <div class="col-md-12">
                 <div style="background:#540d6e; height:200px; width: 100%; border: 1px solid black">
-                	<div ng-if="childElement" align="center"><h1 style="color:white;">THIS IS A CHILD ELEMENT</h1></div>
+                    <div ng-if="childElement" align="center">
+                        <h1 style="color:white;">THIS IS A CHILD ELEMENT</h1></div>
                 </div>
                 <button style="outline: 0" ng-click="addChildElement()" type="button" class="btn btn-warning btn-block">Add Child Element</button>
                 <small>Break On : Subtree Modification</small>
             </div>
         </div>
-         <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="page-header">
-                <h3>Sources</h3>
+                <h3 style="font-weight: 300">Sources</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">               
+            <div class="col-md-12">
                 <button style="outline: 0" ng-click="runAPI()" type="button" class="btn btn-warning btn-block">Call APIs</button>
                 <small>Run All APIs</small>
+            </div>
+            <div class="col-md-12">
+                <ul>
+                    <li>Map resources to File System </li>
+                    <li>Pretty Print </li>
+                    <li>Call Stack </li>
+                    <li>Fuzzy Search</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="page-header">
+                <h3 style="font-weight: 300">Audits</h3>
+                <div align="center">
+                    <h3 style="font-weight: 300">Light House </h3>
+                    <a href="https://developers.google.com/web/tools/lighthouse/"><img height="140" src="https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse.png">
+                </a></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="page-header">
+                <h3 style="font-weight: 300">Network</h3>                
+                    <ul>
+                        <li>Filters</li>
+                        <li>Websockets </li>
+                        <li>Disable Cache</li>
+                        <li>Offline Mode</li>
+                        <li>No Throtlling</li>
+                        <li>Screenshots</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="page-header">
+                <h3 style="font-weight: 300">Security</h3>                
+                    <ul>
+                        <li>Filters</li>
+                        <li>Websockets </li>
+                        <li>Disable Cache</li>
+                        <li>Offline Mode</li>
+                        <li>No Throtlling</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="page-header">
+                <h3 style="font-weight: 300">Performance</h3>                
+                    <ul>
+                        <li>Screenshots</li>
+                        <li>Memory </li>
+                        <li>Summary</li>                        
+                        <li>Bottom Up</li>                        
+                        <li>Call Tree</li>                        
+                        <li>Event Log</li>                        
+                    </ul>
             </div>
         </div>
     </div>

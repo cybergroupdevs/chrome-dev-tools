@@ -13,7 +13,7 @@
                 <small>Break On : Attribute Modifications</small>
             </div>
             <div class="col-md-6">
-                <div ng-if="showElement" style="background:#540d6e; height:200px; width: 100%; border: 1px solid black">
+                <div ng-if="showElement" style="background:#FFF9C4; height:200px; width: 100%; border: 1px solid black">
                 </div>
                 <button style="outline: 0" ng-click="removeElement()" type="button" class="btn btn-warning btn-block">{{button}}</button>
                 <small>Break On : Node Removal</small>
@@ -21,7 +21,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div style="background:#540d6e; height:200px; width: 100%; border: 1px solid black">
+                <div style="background:#BDBDBD; height:200px; width: 100%; border: 1px solid black">
                     <div ng-if="childElement" align="center">
                         <h1 style="color:white;">THIS IS A CHILD ELEMENT</h1></div>
                 </div>
@@ -92,6 +92,17 @@
                         <li>Bottom Up</li>                        
                         <li>Call Tree</li>                        
                         <li>Event Log</li>                        
+                    </ul>
+            </div>
+        </div>
+         <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="page-header">
+                <h3 style="font-weight: 300">Memory</h3>                
+                    <ul>
+                        <li>Statistics</li>
+                        <li>Summary </li>
+                        <li>Object Count</li>                        
+                        <li>Shallow Size</li>                                      
                     </ul>
             </div>
         </div>
